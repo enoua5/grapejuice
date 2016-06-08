@@ -135,14 +135,14 @@ example programs can be found in /projects
 each folder contains a .grape which is the uncompiled version, and a .juice which is the compiled version.
 
 <h3>quick example</h3>
-[int]F_foo [int]number
-&emsp;number+1 -> out
-&emsp;TOSS out
-ENDDEF
-$comment
-ENTRY
-[int]F_GET_float -> picked
-[int]F_foo picked -> thing
-F_PRINT thing
-F_NL
-F_PAUSE
+[int]F_foo [int]number<br/>
+&emsp;number+1 -> out<br/>
+&emsp;TOSS out<br/>
+ENDDEF<br/>
+$comment<br/>
+ENTRY<br/>
+[int]F_GET_float -> picked<br/>
+[int]F_foo picked -> thing<br/>
+F_PRINT thing<br/>
+F_NL<br/>
+F_PAUSE<br/>
