@@ -129,3 +129,20 @@ My friend is currently working on a Windows version<br>
 				
 			example:
 			[string]"strings@_and@_@A's" -> derp
+
+
+example programs can be found in /projects
+each folder contains a .grape which is the uncompiled version, and a .juice which is the compiled version.
+
+<h3>quick example</h3>
+[int]F_foo [int]number
+	number+1 -> out
+	TOSS out
+ENDDEF
+$comment
+ENTRY
+[int]F_GET_float -> picked
+[int]F_foo picked -> thing
+F_PRINT thing
+F_NL
+F_PAUSE
