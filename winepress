@@ -5,6 +5,6 @@ echo And what you wish the pressed program to be named:
 read juiceName
 juiceNameCpp="${juiceName}.cpp"
 juiceNameJuice="${juiceName}.juice"
-~/grapejuice/.compiler/winepress $grapeName $juiceNameCpp
+~/grapejuice/compiler/winepress $grapeName $juiceNameCpp
 g++ -o $juiceNameJuice $juiceNameCpp
 rm $juiceNameCpp
