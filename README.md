@@ -130,7 +130,7 @@ My friend is currently working on a Windows version<br>
 			example:
 			[string]"strings@_and@_@A's" -> derp
 <h3>example program</h3>
-<p>
+<code>
 [int]F_add [int]num1 [int]num2
 	[int]num1+num2 -> total
 	TOSS total
@@ -197,8 +197,9 @@ F_PAUSE
 F_PRINT cool
 F_NL
 F_PAUSE
-</p>
+</code>
 <h3>example program 2</h3>
+<code>
 ENTRY
 [int]F_RAND -> number
 [int]0 -> guesses
@@ -244,3 +245,4 @@ WAIT 5
 [string]"Thank@_You!" -> endSay
 F_PRINT endSay
 F_NL
+</code>
