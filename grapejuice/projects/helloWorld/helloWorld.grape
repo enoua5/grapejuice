@@ -1,0 +1,4 @@
+ENTRY
+[string]"Hello,@_world!" -> msg
+F_PRINT msg
+F_NL

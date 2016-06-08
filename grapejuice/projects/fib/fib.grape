@@ -1,0 +1,15 @@
+ENTRY
+[int]1 -> numOne
+[int]1 -> numTwo
+[int]0 -> swaper
+[bool]true -> looper
+[bool]true -> looperz
+F_PRINT numOne
+F_PAUSE
+WHILE looper=looperz
+	F_PRINT numTwo
+	F_PAUSE
+	numOne -> swaper
+	numTwo -> numOne
+	numOne+swaper -> numTwo
+ENDWHILE

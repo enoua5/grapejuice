@@ -1,0 +1,62 @@
+[int]F_AVG [int]num1 [int]num2
+	[int]num1+num2 -> added
+	added/2 -> added
+	TOSS added
+ENDDEF
+ENTRY
+[int]1 -> min
+[int]100 -> max
+[int]0 -> guesses
+[string]"My@_guess@_is@_" -> guessPrompt
+[string]"Is@_this@_too@_(H)igh,@_too@_(L)ow,@_or@_(C)orrect?" -> ask
+[bool]false -> correct
+[bool]false -> keepGoing
+WHILE correct=keepGoing
+	[int]F_AVG min max -> guess
+	F_PRINT guessPrompt
+	F_PRINT guess
+	F_NL
+	F_PRINT ask
+	F_NL
+	[string]F_GET_string -> response
+	[string]"H" -> tooHigh
+	[string]"L" -> tooLow
+	[string]"C" -> exactly
+	[string]"@_" -> sayBack
+	IF response=exactly
+		"Yay!@_I@_win!" -> sayBack
+		true -> correct
+		guesses+1 -> guesses
+	ENDIF
+	ELSEIF response=tooHigh
+		"hmm.." -> sayBack
+		guesses+1 -> guesses
+		guess-1 -> max
+	ENDELSEIF
+	ELSEIF response=tooLow
+		"hmm.." -> sayBack
+		guesses+1 -> guesses
+		guess+1 -> min
+	ENDELSEIF
+	$response not recognized
+	ELSE
+		"huh?" -> sayBack
+	ENDELSE
+	F_PRINT sayBack
+	F_NL
+	F_PAUSE
+	IF max<min
+		[string]"You@_cheater..." -> cheated
+		F_PRINT cheated
+		F_NL
+		F_PAUSE
+		true -> correct
+	ENDIF
+ENDWHILE
+[string]"It@_took@_me@_" -> finish
+[string]"@_guesses" -> finish2
+F_PRINT finish
+F_PRINT guesses
+F_PRINT finish2
+F_NL
+F_PAUSE

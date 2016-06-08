@@ -1,0 +1,7 @@
+grapeName=$1
+juiceName=$2
+juiceNameCpp="${juiceName}.cpp"
+juiceNameJuice="${juiceName}.juice"
+~/grapejuice/.compiler/winepress $grapeName $juiceNameCpp
+g++ -o $juiceNameJuice $juiceNameCpp
+rm $juiceNameCpp

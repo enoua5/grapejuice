@@ -1,0 +1,6 @@
+echo installing grapejuice, please wait...
+cp -rf grapejuice ~
+sudo cp winepress /usr/bin
+sudo chmod +x /usr/bin/winepress
+sudo cp winepress2 /usr/bin
+sudo chmod +x /usr/bin/winepress2
