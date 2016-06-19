@@ -1,5 +1,5 @@
 # grapejuice
-<b style="text-decoration: underline;">Please note: I created this to see how it would be like to create a simple programming language, abd as such it is not recommended that you use this for anything more than a couple laughs</b><br/><br/>
+<b style="text-decoration: underline;">Please note: I created this to see how it would be like to create a simple programming language, and as such it is not recommended that you use this for anything more than a couple laughs</b><br/><br/>
 Grapejuice installer for linux<br>
 Grapejuice is a language that I made, which compiles into c++<br>
 My friend is currently working on a Windows version<br>
