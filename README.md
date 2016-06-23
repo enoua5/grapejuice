@@ -143,7 +143,7 @@ each folder contains a .grape which is the uncompiled version, and a .juice whic
 ENDDEF
 $comment
 ENTRY
-[int]F_GET_float -> picked<
+[int]F_GET_float -> picked
 [int]F_foo picked -> thing
 F_PRINT thing
 F_NL
