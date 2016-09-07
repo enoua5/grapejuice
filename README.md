@@ -24,7 +24,7 @@ My friend is currently working on a Windows version<br>
 	Functions:
 		defining a function:
 			In head of file:
-			[datatype (any c++ data type, or "string"]F_FunctionName [datatype]param1 [datatype]param2 ...
+			[datatype (any c++ data type, or "string")]F_FunctionName [datatype]param1 [datatype]param2 ...
 				code
 				TOSS returnvalue
 			ENDDEF
@@ -42,7 +42,7 @@ My friend is currently working on a Windows version<br>
 			F_add one two
 		built-in functions:
 			F_RAND
-				returns a random number from 0 to 256
+				returns a random number from 0 to 255
 			F_RAND_char
 				returns a random letter
 			F_PRINT message
