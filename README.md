@@ -1,3 +1,6 @@
+# not *that* Grapejuice
+The Grapejuice you're looking for is on [Gitlab](https://gitlab.com/brinkervii/grapejuice). This is just a dumb barely-working project I made as a teen.
+
 # grapejuice
 <b style="text-decoration: underline;">Please note: I created this to see how it would be like to create a simple programming language, and as such it is not recommended that you use this for anything more than a couple laughs</b><br/><br/>
 Grapejuice installer for linux<br>
